@@ -34,7 +34,7 @@ if (pariODispari === "pari") {
     let numeroUtente = parseInt(prompt("scegli un numero da uno a cinque"))
     
     // purtroppo non mi fido dell'utente
-    if (numeroUtente <= 5) {
+    if (numeroUtente <= 5 && numeroUtente>=1) {
         // evoco la funzione per generare un numero random
         numeroPc=numeroComputerFunzione (1,5)
         console.log(`il numero dell'utente è ${numeroUtente}`)
@@ -58,12 +58,12 @@ if (pariODispari === "pari") {
         alert("inserisci un numero da uno a 5!")
     }
 
- } else if (pariODispari === pariODispari){
+ } else if (pariODispari === "dispari"){
     // chiedo all'utente di inserire un numero da 1 a 5
     let numeroUtente = parseInt(prompt("scegli un numero da uno a cinque"))
     
     // purtroppo non mi fido dell'utente
-    if (numeroUtente <= 5) {
+    if (numeroUtente <= 5 && numeroUtente>=1) {
         // evoco la funzione per generare un numero random
         numeroPc=numeroComputerFunzione (1,5)
         console.log(`il numero dell'utente è ${numeroUtente}`)
@@ -81,9 +81,9 @@ if (pariODispari === "pari") {
                 risultatovincitore= "hai perso"
             }
             console.log(risultatovincitore)
-       
-    } else{
+        }
+    }  else {
         alert("scrivi pari o dispari!")
+
     }
-}
 
