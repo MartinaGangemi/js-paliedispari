@@ -58,7 +58,7 @@ if (pariODispari === "pari") {
         alert("inserisci un numero da uno a 5!")
     }
 
- } else if (pariODispari === "dispari"){
+} else if (pariODispari === "dispari"){
     // chiedo all'utente di inserire un numero da 1 a 5
     let numeroUtente = parseInt(prompt("scegli un numero da uno a cinque"))
     
@@ -82,8 +82,10 @@ if (pariODispari === "pari") {
             }
             console.log(risultatovincitore)
         }
+        else{
+            alert("inserisci un numero da uno a 5!")
+        }
     }  else {
         alert("scrivi pari o dispari!")
-
-    }
+}
 
